@@ -9,4 +9,4 @@ e = int(input("Enter marks 5: "))
 
 final_marks = marks(a, b, c, d, e)
 
-print("Final Marks:", final_marks)
+print("final marks:",final_marks)
