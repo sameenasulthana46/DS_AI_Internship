@@ -1,23 +1,7 @@
-print("Welcome to Shopping")
+import numpy as np
 
-cart = []
+prices = np.array([100, 250, 80, 150, 300])
 
-while True:
-    item = input("Enter your item: ")
-    cart.append(item)
+updated_prices = prices + 20
 
-    choice = input("Do you want to add another item? (yes/no): ")
-
-    if choice == "no":
-        break
-
-print("\nDone")
-
-print("Cart type:", type(cart))
-print("Total items:", len(cart))
-print("Cart:", cart)
-
-cart = tuple(cart)
-
-print("\nCart type:", type(cart))
-print("Checkout:", cart)
+print("Updated prices:", updated_prices)
